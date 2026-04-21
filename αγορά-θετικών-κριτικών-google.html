@@ -451,28 +451,6 @@
         </div>
     </section>
 
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Το δοκίμασαν… και το υιοθέτησαν.</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <img src="μαρτυρία-κριτικής-google-1.webp" alt="Μαρτυρία πελάτη θετικές κριτικές Google" title="Μαρτυρία θετικές κριτικές" width="768" height="1496" class="testimonial-img" loading="lazy">
-                </div>
-                <div class="testimonial-card">
-                    <img src="μαρτυρία-κριτικής-google-2.webp" alt="Αναφορά πελάτη μετά αγορά θετικών κριτικών Google" title="Αποτέλεσμα θετικές κριτικές" width="768" height="1496" class="testimonial-img" loading="lazy">
-                </div>
-                <div class="testimonial-card">
-                    <img src="μαρτυρία-κριτικής-google-3.webp" alt="Ευχαριστημένος πελάτης από τις θετικές κριτικές Google" title="Βελτίωση βαθμολογίας Google" width="768" height="1496" class="testimonial-img" loading="lazy">
-                </div>
-                <div class="testimonial-card">
-                    <img src="μαρτυρία-κριτικής-google-4.webp" alt="Αποτέλεσμα μετά την αγορά θετικών κριτικών Google" title="Αποτέλεσμα κριτικές Google Maps" width="768" height="1496" class="testimonial-img" loading="lazy">
-                </div>
-                <div class="testimonial-card">
-                    <img src="μαρτυρία-κριτικής-google-5.webp" alt="Ευχαριστημένος πελάτης της υπηρεσίας Αγορά Κριτικών" title="Ευχαριστημένος πελάτης Αγορά Κριτικών" width="768" height="1496" class="testimonial-img" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section class="seo-content">
         <div class="container">
@@ -669,7 +647,7 @@
                 }
             }
             window.addEventListener('scroll', updateHeader);
-            const animateElements = document.querySelectorAll('.stat-card, .step, .pricing-card, .testimonial-card, .faq-item');
+            const animateElements = document.querySelectorAll('.stat-card, .step, .pricing-card, .faq-item');
             const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
             const observer = new IntersectionObserver(function(entries) {
                 entries.forEach(entry => {

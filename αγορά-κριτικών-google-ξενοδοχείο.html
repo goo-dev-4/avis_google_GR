@@ -439,18 +439,6 @@
         </div>
     </section>
 
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Το δοκίμασαν… και το υιοθέτησαν.</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card"><img src="μαρτυρία-κριτικής-google-1.webp" alt="Μαρτυρία ξενοδόχου κριτικές Google" title="Μαρτυρία ξενοδοχείο" width="768" height="1496" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="μαρτυρία-κριτικής-google-2.webp" alt="Ανατροφοδότηση ξενοδόχου μετά την αγορά κριτικών Google" title="Αποτέλεσμα κριτικών ξενοδοχείο" width="768" height="1496" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="μαρτυρία-κριτικής-google-3.webp" alt="Ικανοποιημένος ξενοδόχος κριτικές Google" title="Βαθμολογία Google ξενοδοχείο βελτιωμένη" width="768" height="1496" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="μαρτυρία-κριτικής-google-4.webp" alt="Αποτέλεσμα μετά την αγορά κριτικών Google ξενοδοχείο" title="Αποτέλεσμα κριτικών ξενοδοχείο Google Maps" width="768" height="1496" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="μαρτυρία-κριτικής-google-5.webp" alt="Ικανοποιημένο ξενοδοχείο από την υπηρεσία Αγορά Κριτικών" title="Ικανοποιημένος πελάτης Αγορά Κριτικών" width="768" height="1496" class="testimonial-img" loading="lazy"></div>
-            </div>
-        </div>
-    </section>
 
     <section class="seo-content">
         <div class="container">
@@ -552,7 +540,7 @@
                 const header = document.querySelector('.header');
                 header.style.boxShadow = window.scrollY > 50 ? '0 4px 20px rgba(0,0,0,0.1)' : '0 4px 15px rgba(0,0,0,0.08)';
             });
-            const animateElements = document.querySelectorAll('.stat-card, .step, .pricing-card, .testimonial-card, .faq-item');
+            const animateElements = document.querySelectorAll('.stat-card, .step, .pricing-card, .faq-item');
             const observer = new IntersectionObserver(function(entries) { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
             animateElements.forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(30px)'; el.style.transition = 'opacity 0.6s ease, transform 0.6s ease'; observer.observe(el); });
             let animated = false;
