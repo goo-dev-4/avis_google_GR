@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://αγορά-κριτικών.com/sitemap.xml
+Sitemap: https://xn----olboi6aafc1anwd4b8j.com/sitemap.xml
